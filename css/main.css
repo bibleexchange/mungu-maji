@@ -1,0 +1,165 @@
+* {
+	-webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #fff;
+	overflow-x: hidden;
+}
+img {
+	width: 100%;
+	max-width: 100%;
+	display: block;
+}
+p {
+	margin-top: 1.2rem;
+	font-size: 1.2rem;
+  line-height: 1.3;
+}
+h1 {
+	line-height: 1.2;
+}
+h2 {
+	font-size: 3rem;
+  padding: 2rem;
+  font-family: 'Pacifico', cursive;
+}
+h3 {
+	font-size: 3rem;
+	color: #fff;
+  font-family: 'Pacifico', cursive;
+  background-image: url(../images/circle-stamp.svg);
+  background-repeat: no-repeat;
+  padding: 1.8rem;
+  background-position: center;
+  transform: rotate(-8deg);font-family: 'Pacifico', cursive;
+  text-align: center;
+  line-height: 1;
+}
+h4 {
+	font-size: 2rem;
+	color: #00AAFF;
+	line-height: 1;
+	margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+a {
+	text-decoration: none;
+	border-bottom: 1px dashed #00AAFF;
+	font-size: 1.2rem;
+  line-height: 1.3;
+}
+button {
+	background-color: #00AAFF;
+	border: none;
+	color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	border-radius: 20px;
+	position: relative;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: .1rem 1rem;
+  margin: 1.5rem;
+  transition: background .6s;
+}
+button:before {
+	content: "";
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  left: -5px;
+  top: -5px;
+  border-radius: 20px;
+  border: 1px dashed #00AAFF;
+  position: absolute;
+}
+button:hover {
+	background-color: #33DDFF;
+}
+header {
+	background-image: url(../images/lazarus.jpg);
+	height: 100vh;
+	background-size: cover;
+	display: flex;
+}
+.text {
+	width: 33.333%;
+	background-color: rgba(32,61,76,.9);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1.5rem;
+}
+.details {
+  flex-basis: 66.666%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.details strong {
+	display: block;
+  font-size: 4rem;
+  color: #fff;
+}
+section {
+	height: 100vh;
+	background-size: cover;
+	display: flex;
+}
+section:nth-of-type(odd) {
+	justify-content: flex-end;
+}
+.banner {
+	background-color: #00AAFF;
+  text-align: center;
+  border-top: 3px dashed #fff;
+  border-bottom: 3px dashed #fff;
+}
+#need {
+	background-image: url(../images/cart.jpg);
+}
+#sanitation {
+	background-image: url(../images/tank.jpg);
+}
+#agriculture {
+	background-image: url(../images/garden.jpg);
+}
+#building {
+	background-image: url(../images/building.jpg);
+}
+#community {
+	background-image: url(../images/buckets.jpg);
+}
+#donate {
+	background-color: rgba(32,61,76,.9);
+}
+footer {
+	display: flex;
+	background-color: #072433;
+	color: #53707F;
+	padding: 1rem;
+	align-items: center;
+}
+footer > * {
+	margin: 0 1rem;
+}
+footer a {
+	color: #53707F;
+	flex: 0;
+}
+footer svg {
+	fill: #53707F;
+	width: 5rem;
+}
+.affiliate {
+	border: none;
+}
+#be-logo {
+	width: 3rem;
+}
