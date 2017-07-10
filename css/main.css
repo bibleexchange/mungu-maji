@@ -181,29 +181,6 @@ footer svg {
 	width: 3rem;
 }
 
-@media screen and (max-width: 600px) {
-	section, header {
-		flex-direction: column;
-		justify-content: flex-end;
-		background-size: contain;
-		background-position-y: top;
-		background-repeat: no-repeat;
-	}
-	.text {
-		flex-basis: 100%;
-		background-color: rgb(32,61,76);
-	}
-	header .text {
-		flex-basis: inherit;
-		flex-direction: row;
-	}
-	.logo {
-		flex-basis: 30%;
-	}
-	#community {
-		background-position-x: left; 
-	}
-}
 @media screen and (max-width: 1500px) { 
   header {
 		background-image: url(../images/1600/lazarus.jpg);
@@ -296,47 +273,105 @@ footer svg {
 		background-position-y: top; 
 	}
 }
+@media screen and (max-width: 600px) {
+	section, header {
+		flex-direction: column;
+		justify-content: flex-end;
+		background-image: none !important;
+	}
+	section:before, header:before {
+		flex: 1;
+		content: "";
+		background-size: cover;
+		background-position: center;
+	}
+	.text {
+		flex-basis: 100%;
+		background-color: rgb(32,61,76);
+	}
+	header .text {
+		flex-basis: inherit;
+		flex-direction: row;
+	}
+	.logo {
+		flex-basis: 30%;
+	}
+	header:before {
+		background-image: url(../images/800/lazarus.jpg);
+	}
+	#need:before {
+		background-image: url(../images/800/cart.jpg);
+	}
+	#sanitation:before {
+		background-image: url(../images/800/tank.jpg);
+	}
+	#agriculture:before {
+		background-image: url(../images/800/garden.jpg);
+	}
+	#building:before {
+		background-image: url(../images/800/building.jpg);
+	}
+	#community:before {
+		background-image: url(../images/800/buckets2.jpg);
+	}
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 600px), screen and (min-resolution: 192dpi) and (max-width: 600px) {
+	header:before {
+		background-image: url(../images/1600/lazarus.jpg);
+	}
+	#need:before {
+		background-image: url(../images/1600/cart.jpg);
+	}
+	#sanitation:before {
+		background-image: url(../images/1600/tank.jpg);
+	}
+	#agriculture:before {
+		background-image: url(../images/1600/garden.jpg);
+	}
+	#building:before {
+		background-image: url(../images/1600/building.jpg);
+	}
+	#community:before {
+		background-image: url(../images/1600/buckets2.jpg);
+	}
+}
 @media screen and (max-width: 400px) { 
-  header {
+  header:before {
 		background-image: url(../images/500/lazarus.jpg);
 	}
-	#need {
+	#need:before {
 		background-image: url(../images/500/cart.jpg);
 	}
-	#sanitation {
+	#sanitation:before {
 		background-image: url(../images/500/tank.jpg);
 	}
-	#agriculture {
+	#agriculture:before {
 		background-image: url(../images/500/garden.jpg);
-		background-position-y: top; 
 	}
-	#building {
+	#building:before {
 		background-image: url(../images/500/building.jpg);
 	}
-	#community {
+	#community:before {
 		background-image: url(../images/500/buckets.jpg);
-		background-position-y: top; 
 	}
 }
 @media (-webkit-min-device-pixel-ratio: 2) and (max-width: 400px), (min-resolution: 192dpi) and (max-width: 400px) { 
-  header {
+  header:before {
 		background-image: url(../images/800/lazarus.jpg);
 	}
-	#need {
+	#need:before {
 		background-image: url(../images/800/cart.jpg);
 	}
-	#sanitation {
+	#sanitation:before {
 		background-image: url(../images/800/tank.jpg);
 	}
-	#agriculture {
+	#agriculture:before {
 		background-image: url(../images/800/garden.jpg);
-		background-position-y: top; 
 	}
-	#building {
+	#building:before {
 		background-image: url(../images/800/building.jpg);
 	}
-	#community {
-		background-image: url(../images/800/buckets.jpg);
-		background-position-y: top; 
+	#community:before {
+		background-image: url(../images/800/buckets2.jpg);
 	}
 }
