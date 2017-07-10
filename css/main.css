@@ -196,6 +196,9 @@ footer svg {
 	.logo {
 		flex-basis: 30%;
 	}
+	#community {
+		background-position-x: left; 
+	}
 }
 @media screen and (max-width: 1500px) { 
   header {
@@ -250,6 +253,7 @@ footer svg {
 	}
 	#sanitation {
 		background-image: url(../images/800/tank.jpg);
+		background-position-x: right;
 	}
 	#agriculture {
 		background-image: url(../images/800/garden.jpg);
@@ -257,6 +261,7 @@ footer svg {
 	}
 	#building {
 		background-image: url(../images/800/building.jpg);
+		background-position-x: right; 
 	}
 	#community {
 		background-image: url(../images/800/buckets.jpg);
