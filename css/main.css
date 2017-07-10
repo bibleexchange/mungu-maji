@@ -185,9 +185,13 @@ footer svg {
 	section, header {
 		flex-direction: column;
 		justify-content: flex-end;
+		background-size: contain;
+		background-position-y: top;
+		background-repeat: no-repeat;
 	}
 	.text {
 		flex-basis: 100%;
+		background-color: rgb(32,61,76);
 	}
 	header .text {
 		flex-basis: inherit;
@@ -250,10 +254,12 @@ footer svg {
 	}
 	#need {
 		background-image: url(../images/800/cart.jpg);
+		background-position-y: -30%;
 	}
 	#sanitation {
 		background-image: url(../images/800/tank.jpg);
 		background-position-x: right;
+		background-position-y: -30%;
 	}
 	#agriculture {
 		background-image: url(../images/800/garden.jpg);
