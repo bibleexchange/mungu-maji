@@ -61,7 +61,7 @@ a {
 	font-size: 1.2rem;
   line-height: 1.3;
 }
-button {
+button, a.action-call {
 	background-color: #00AAFF;
 	border: none;
 	color: #fff;
@@ -73,8 +73,9 @@ button {
   padding: .1rem 1rem;
   margin: 1.5rem;
   transition: background .6s;
+  text-align: center;
 }
-button:before {
+button:before, a.action-call:before {
 	content: "";
   width: 100%;
   height: 100%;
@@ -85,7 +86,7 @@ button:before {
   border: 1px dashed #00AAFF;
   position: absolute;
 }
-button:hover {
+button:hover, a.action-call:hover {
 	background-color: #33DDFF;
 }
 header {
@@ -125,6 +126,53 @@ section {
 section:nth-of-type(odd) {
 	justify-content: flex-end;
 }
+section .slider {
+	flex-basis: 66.666%;
+	position: relative;
+}
+section .slider > div > div {
+	height: 100vh;
+}
+section .slider img {
+	height: 100%;
+	object-fit: cover;
+}
+.slider nav {
+	position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+.carousel-dot {
+    border-radius: 50%;
+    font-size: 0px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 16px;
+    height: 16px;
+    margin: 12px;
+    padding: 0;
+    display: inline-block;
+    background-color: transparent;
+    box-shadow: inset 0 0 0 3px #00AAFF;
+    -webkit-transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
+}
+.carousel-dot.current {
+    box-shadow: inset 0 0 0 1.5rem #00AAFF;
+}
+.carousel-dot:hover {
+    box-shadow: inset 0 0 0 1.5rem #00AAFF;
+    background-color: transparent;
+}
+.carousel-dot:before {
+    content: none;
+}
+
 .banner {
 	background-color: #00AAFF;
   text-align: center;
