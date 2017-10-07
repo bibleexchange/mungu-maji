@@ -21,6 +21,17 @@
 					<p>We want to dig a well that will provide clean water for the not only the needs of the school, but for the community around it.</p>
 				</div>
 			</section>
+			<section style="min-height: 0;">
+				<div class="text">
+					<p>Watch this video to see how we currently get water for the Bible school!</p>
+				</div>
+				<div class="video-wrapper">
+					<div class="video">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/K42yieTqzUA?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</section>
+			<div id="target"></div>
 			<div class="banner">
 				<h2>Why we need a well</h2>
 			</div>
@@ -157,6 +168,7 @@
 		</footer>
 		<script src="https://donorbox.org/install-popup-button.js" type="text/javascript" defer></script>
   		<script src="/scripts/siema.js" type="text/javascript"></script>
+  		<script src="/scripts/instafeed.min.js" type="text/javascript"></script>
   		<script> 
   			window.DonorBox = { widgetLinkClassName: 'custom-dbox-popup' } 
 			Siema.prototype.addPagination = function() {
@@ -185,6 +197,14 @@
 				document.querySelector('#dot-' + mySiema.currentSlide).className = 'carousel-dot current';
 			}
 			createSlider(shirtDiv, shirtSlider);
+		    var feed = new Instafeed({
+		        get: 'tagged',
+		        tagName: 'mjdtz',
+		        clientId: 'a385f2b805e5487c8fb0309442c7083f',
+		        target: 'target'
+		    });
+		    feed.run();
+
   		</script>
 	</body>
 </html>
