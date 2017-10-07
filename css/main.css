@@ -56,6 +56,7 @@ h4 {
   font-weight: normal;
 }
 a {
+	color: #fff;
 	text-decoration: none;
 	border-bottom: 1px dashed #00AAFF;
 	font-size: 1.2rem;
@@ -75,7 +76,7 @@ button, a.action-call {
   transition: background .6s;
   text-align: center;
 }
-button:before, a.action-call:before {
+a.action-call:before {
 	content: "";
   width: 100%;
   height: 100%;
@@ -95,6 +96,7 @@ header {
 	background-size: cover;
 	display: flex;
 	background-position: center;
+	justify-content: flex-end;
 }
 .text {
 	flex-basis: 33.333%;
@@ -138,54 +140,20 @@ section {
 	display: flex;
 	background-position: center;
 }
-section:nth-of-type(odd) {
-	justify-content: flex-end;
+section:nth-of-type(even) {
+	flex-direction: row-reverse;
 }
 section .slider {
-	flex-basis: 66.666%;
+	overflow: hidden;
 	position: relative;
+	flex-basis: 66.666%;
 }
-section .slider > div > div {
+section .siema > div > div {
 	height: 100vh;
 }
 section .slider img {
 	height: 100%;
 	object-fit: cover;
-}
-.slider nav {
-	position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-}
-.carousel-dot {
-    border-radius: 50%;
-    font-size: 0px;
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-    text-indent: -9999px;
-    width: 16px;
-    height: 16px;
-    margin: 12px;
-    padding: 0;
-    display: inline-block;
-    background-color: transparent;
-    box-shadow: inset 0 0 0 3px #00AAFF;
-    -webkit-transition: box-shadow 0.3s ease;
-    transition: box-shadow 0.3s ease;
-}
-.carousel-dot.current {
-    box-shadow: inset 0 0 0 1.5rem #00AAFF;
-}
-.carousel-dot:hover {
-    box-shadow: inset 0 0 0 1.5rem #00AAFF;
-    background-color: transparent;
-}
-.carousel-dot:before {
-    content: none;
 }
 
 .banner {
@@ -217,6 +185,9 @@ section .slider img {
 #fundraiser {
 	background-image: url(../images/shirt.jpg);
 }
+#refferal {
+	display: none;
+}
 footer {
 	display: flex;
 	background-color: #072433;
@@ -242,6 +213,84 @@ footer svg {
 }
 #be-logo {
 	width: 3rem;
+}
+
+.slick-prev,
+.slick-next {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    position: absolute;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 0;
+    color: transparent;
+    outline: none;
+    margin: auto 0;
+    height: 90px;
+    width: auto;
+    top: 0;
+    bottom: 0;
+    line-height: 1;
+    z-index: 99
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: "fontawesome-webfont", Helvetica, Arial, sans-serif;
+    font-size: 4rem;
+    line-height: 43px;
+    color: #00AAFF
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+    color: #33DDFF
+}
+
+@media all and (max-width: 500px) {
+    .slick-prev,
+    .slick-next {
+        height: 65px
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 2rem
+    }
+}
+
+.slick-prev {
+    left: 0;
+    padding: 10px 15px 15px 10px
+}
+
+.slick-prev:before {
+    content: '\f104'
+}
+
+@media all and (max-width: 500px) {
+    .slick-prev {
+        padding: 5px 7px 7px 5px
+    }
+}
+
+.slick-next {
+    right: 0;
+    padding: 10px 10px 15px 15px
+}
+
+.slick-next:before {
+    content: '\f105'
+}
+
+@media all and (max-width: 500px) {
+    .slick-next {
+        padding: 5px 5px 7px 7px
+    }
 }
 
 @media screen and (max-width: 1500px) { 
