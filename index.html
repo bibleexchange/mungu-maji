@@ -12,20 +12,11 @@
 		<link rel="manifest" href="/manifest.json">
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 		<meta name="theme-color" content="#072433">
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108075616-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-108075616-1');
-		</script>
 	</head>
 	<body>
 		<header>
 			<div class="banner">
-				<strong><p>Our T-Shirt fundraiser is live. <a href="https://www.customink.com/fundraising/mungu-maji">Get one now!</a></p></strong>
+				<strong><p>Join the cause! <a id="donate-button" class="custom-dbox-popup action-call" href="https://donorbox.org/mungu-maji">Donate Now!</a></p></strong>
 			</div>
 			<div class="text">
 			<img class="logo" src="/images/mungu-magi-logo.svg">
@@ -85,18 +76,18 @@
 				</div>
 				<div class="details">
 					<h4>Goal <strong>$15,000</strong></h4>
-					<h4>Raised so far <strong>$356.20</strong></h4>
-					<h4>Progress <strong>2%</strong></h4>
+					<h4>Raised so far <strong>$1,735.82</strong></h4>
+					<h4>Progress <strong>11.5%</strong></h4>
 					<a id="donate-button" class="custom-dbox-popup action-call" href="https://donorbox.org/mungu-maji">Donate Now!</a>
 				</div>
 			</section>
-			<section id="fundraiser">
+			<!--<section id="fundraiser">
 				<div class="text">
 					<h3>T-Shirt Fundraiser</h3>
 					<p>Support the project by buying a T-Shirt through our CustomInk campaign!</p>
 					<a class="action-call" href="https://www.customink.com/fundraising/mungu-maji">Get a Shirt!</a>
 				</div>
-			</section>
+			</section>-->
 			<div class="banner">
 				<h2>Spread the Word</h2>
 				<p>Use the hashtag <strong>#mungumaji</strong> to get the word out!</p>
@@ -191,7 +182,7 @@
 			<a href="mailto:matt@deliverance.me">matt@deliverance.me</a>
 		</footer>
 		<script src="https://donorbox.org/install-popup-button.js" type="text/javascript" defer></script>
-  		<script src="/scripts/siema.js" type="text/javascript"></script>
+  		<!--<script src="/scripts/siema.js" type="text/javascript"></script>-->
   		<!--<script src="//assets.juicer.io/embed.js" type="text/javascript" defer></script>-->
   		<script> 
   			window.DonorBox = { widgetLinkClassName: 'custom-dbox-popup' } 
@@ -205,16 +196,16 @@
 				document.getElementById('video').innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/K42yieTqzUA?rel=0" frameborder="0" allowfullscreen></iframe>';
 			}
 
-			var shirtDiv = document.getElementById('fundraiser');
-			var shirtSlider = '<div class="slider"><div class="siema"><img srcset="/images/500/shirt-1.jpg 500w, /images/800/shirt-1.jpg 800w, /images/1600/shirt-1.jpg 1600w, /images/3200/shirt-1.jpg 3200w" src="/images/800/shirt-1.jpg" alt="Group of young people wearing blue and white Mungu Maji shirts" style="object-position: left;"><img srcset="/images/500/shirt-2.jpg 500w, /images/800/shirt-2.jpg 800w, /images/1600/shirt-2.jpg 1600w, /images/3200/shirt-2.jpg 3200w" src="/images/800/shirt-2.jpg" alt="Three young people by the ocean wearing blue Mungu Maji shirts" style="object-position: 18%;"><img srcset="/images/500/shirt-3.jpg 500w, /images/800/shirt-3.jpg 800w, /images/1600/shirt-3.jpg 1600w, /images/3200/shirt-3.jpg 3200w" src="/images/800/shirt-3.jpg" alt="Young woman wearing a blue Mungu Maji shirt sitting on a rock" style="object-position: right;"><img srcset="/images/500/shirt-4.jpg 500w, /images/800/shirt-4.jpg 800w, /images/1600/shirt-4.jpg 1600w, /images/3200/shirt-4.jpg 3200w" src="/images/800/shirt-4.jpg" alt="The back side of the Mungu Maji shirts"></div><button onclick="mySiema.prev();" class="slick-prev slick-arrow">prev</button><button onclick="mySiema.next();" class="slick-next slick-arrow">next</button></div>'
-			var createSlider = function(div, content) {
+			//var shirtDiv = document.getElementById('fundraiser');
+			//var shirtSlider = '<div class="slider"><div class="siema"><img srcset="/images/500/shirt-1.jpg 500w, /images/800/shirt-1.jpg 800w, /images/1600/shirt-1.jpg 1600w, /images/3200/shirt-1.jpg 3200w" src="/images/800/shirt-1.jpg" alt="Group of young people wearing blue and white Mungu Maji shirts" style="object-position: left;"><img srcset="/images/500/shirt-2.jpg 500w, /images/800/shirt-2.jpg 800w, /images/1600/shirt-2.jpg 1600w, /images/3200/shirt-2.jpg 3200w" src="/images/800/shirt-2.jpg" alt="Three young people by the ocean wearing blue Mungu Maji shirts" style="object-position: 18%;"><img srcset="/images/500/shirt-3.jpg 500w, /images/800/shirt-3.jpg 800w, /images/1600/shirt-3.jpg 1600w, /images/3200/shirt-3.jpg 3200w" src="/images/800/shirt-3.jpg" alt="Young woman wearing a blue Mungu Maji shirt sitting on a rock" style="object-position: right;"><img srcset="/images/500/shirt-4.jpg 500w, /images/800/shirt-4.jpg 800w, /images/1600/shirt-4.jpg 1600w, /images/3200/shirt-4.jpg 3200w" src="/images/800/shirt-4.jpg" alt="The back side of the Mungu Maji shirts"></div><button onclick="mySiema.prev();" class="slick-prev slick-arrow">prev</button><button onclick="mySiema.next();" class="slick-next slick-arrow">next</button></div>'
+			/*var createSlider = function(div, content) {
 				div.style.background = "rgba(32,61,76,.9)";
 				div.innerHTML += content;
 			}
 			createSlider(shirtDiv, shirtSlider);
 			var mySiema = new Siema({
 				loop: true
-			});
+			});*/
   		</script>
 	</body>
 </html>
